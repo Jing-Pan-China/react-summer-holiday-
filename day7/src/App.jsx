@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
     <h1>Hello List</h1>
     <input type="text" value={newTodo} 
     onChange={(event)=>setNewTodo(event.target.value)}/>
-    <button onClick={handleAddTodos}>Add</button>
+    <button onClick={handleAddTodo}>Add</button>
     <ul>    
       {
         todos.map((todo,index)=>(
